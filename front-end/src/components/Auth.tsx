@@ -21,18 +21,15 @@ const Auth: FC<AuthProps> = ({type})=>{
                 navigate('/login')
             }
             else{
-                console.log('logging in/auth.tsx');
                 const response = await login(username, password)
-                console.log(response.data.token);
-                console.log(response.data.message);
                 localStorage.setItem('token',response.data.token)
                 localStorage.setItem('username',response.data.username)
                 localStorage.setItem('userid',response.data.userid)
                 navigate('/todos')
             }
         }catch(err){
-            // console.log('failed to authenticate');
-            // alert('authentication failed')
+            console.log('failed to authenticate');
+            alert('authentication failed')
         }
     }
 

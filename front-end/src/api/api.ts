@@ -7,8 +7,6 @@ export const register = (username: string, password: string)=>{
 }
 
 export const login = (username: string, password: string)=>{
-    console.log(username, password);
-    console.log('sending axios post request/api.ts');
     return axios.post(`${api_base_url}/auth/login`, {username, password})
 }
 

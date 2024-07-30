@@ -7,7 +7,6 @@ const TodoPage: FC = () => {
     let [refetch, setRefetch] = useState(true)
     useEffect(()=>{
         setRefetch(!refetch)
-        console.log(refetch);
     },[])
     let username = localStorage.getItem('username')
     return (
