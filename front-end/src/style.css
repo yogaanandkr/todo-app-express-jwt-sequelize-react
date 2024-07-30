@@ -1,0 +1,23 @@
+.logout{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+body{
+    margin-top: 40px;
+}
+
+
+textarea{
+    resize: none;
+}
+
+.table{
+    overflow-x: auto;
+}
+
+.username{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}

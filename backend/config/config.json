@@ -1,0 +1,10 @@
+{
+    "development":{
+        "username": "root",
+        "password": "Trigent@123",
+        "database": "todo_db",
+        "host": "localhost",
+        "dialect": "mysql"
+
+    }
+}
